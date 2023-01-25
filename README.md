@@ -20,3 +20,14 @@ Line
 pax> cp file filex ; sed -i -e 's/#.*$//' -e '/^$/d' filex ; cat filex
 Line
 ````
+
+## set permissive
+````
+sed -i s/^SELINUX=.*$/SELINUX=permissive/ /etc/selinux/config
+````
+
+
+## set disabled
+````
+sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config
+````
